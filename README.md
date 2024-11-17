@@ -87,19 +87,19 @@ let elements = XCUIApplication().buttons.identifier(containing: "Submit")
 - Retrieves sibling elements within a shared parent container.
 
 ### Extensions for `XCUIElementQuery`
-1. `label(containing:caseSensitive:)`
+1. `label(containing:type:caseSensitive:)`
 - Filters elements with labels containing specific text.
-2. `label(matching:caseSensitive:)`
+2. `label(matching:type:caseSensitive:)`
 - Filters elements with labels matching specific text exactly.
-3. `value(containing:caseSensitive:)`
+3. `value(containing:type:caseSensitive:)`
 - Filters elements with values containing specific text.
-4. `value(matching:caseSensitive:)`
+4. `value(matching:type:caseSensitive:)`
 - Filters elements with values matching specific text exactly.
-5. `placeholderValue(containing:caseSensitive:)`
+5. `placeholderValue(containing:type:caseSensitive:)`
 - Filters elements with placeholder values containing specific text.
-6. `placeholderValue(matching:caseSensitive:)`
+6. `placeholderValue(matching:type:caseSensitive:)`
 - Filters elements with placeholder values matching specific text exactly.
-7. `identifier(containing:caseSensitive:)`
+7. `identifier(containing:type:caseSensitive:)`
 - Filters elements with identifiers containing specific text.
 
 ## Contributing
