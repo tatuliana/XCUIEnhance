@@ -21,7 +21,7 @@ import PackageDescription
 let package = Package(
     name: "YourProject",
     dependencies: [
-        .package(url: "https://github.com/yourusername/XCUIEnhance.git", from: "1.0.0"),
+        .package(url: "https://github.com/tatuliana/XCUIEnhance.git", from: "1.0.0"),
     ],
     targets: [
         .target(
