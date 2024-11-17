@@ -20,8 +20,8 @@ extension XCUIElementQuery {
     /// BaseScreen.app.staticTexts.label(containing: "1", "2", "3", caseSensitive: false)
     ///  ````
     func label(containing texts: String..., type: NSCompoundPredicate.LogicalType = .and, caseSensitive: Bool = true) -> XCUIElementQuery {
-        let caseSwitch = caseSensitive ? "" : "[c]"
-        let subPredicates = texts.map { NSPredicate(format: "label CONTAINS\(caseSwitch)%@", $0) }
+        let caseMode = caseSensitive ? "" : "[c]"
+        let subPredicates = texts.map { NSPredicate(format: "label CONTAINS\(caseMode)%@", $0) }
         let predicate = NSCompoundPredicate(type: type, subpredicates: subPredicates)
         return matching(predicate)
     }
@@ -38,8 +38,8 @@ extension XCUIElementQuery {
     /// BaseScreen.app.staticTexts.label(matching: "1", "2", "3", caseSensitive: false)
     ///  ````
     func label(matching texts: String..., type: NSCompoundPredicate.LogicalType = .and, caseSensitive: Bool = true) -> XCUIElementQuery {
-        let caseSwitch = caseSensitive ? "" : "[c]"
-        let subPredicates = texts.map { NSPredicate(format: "label MATCHES\(caseSwitch)%@", $0) }
+        let caseMode = caseSensitive ? "" : "[c]"
+        let subPredicates = texts.map { NSPredicate(format: "label MATCHES\(caseMode)%@", $0) }
         let predicate = NSCompoundPredicate(type: type, subpredicates: subPredicates)
         return matching(predicate)
     }
@@ -56,8 +56,8 @@ extension XCUIElementQuery {
     /// BaseScreen.app.staticTexts.value(containing: "1", "2", "3", caseSensitive: false)
     ///  ````
     func value(containing texts: String..., type: NSCompoundPredicate.LogicalType = .and, caseSensitive: Bool = true) -> XCUIElementQuery {
-        let caseSwitch = caseSensitive ? "" : "[c]"
-        let subPredicates = texts.map { NSPredicate(format: "value CONTAINS\(caseSwitch)%@", $0) }
+        let caseMode = caseSensitive ? "" : "[c]"
+        let subPredicates = texts.map { NSPredicate(format: "value CONTAINS\(caseMode)%@", $0) }
         let predicate = NSCompoundPredicate(type: type, subpredicates: subPredicates)
         return matching(predicate)
     }
@@ -74,8 +74,8 @@ extension XCUIElementQuery {
     /// BaseScreen.app.staticTexts.value(matching: "1", "2", "3", caseSensitive: false)
     ///  ````
     func value(matching texts: String..., type: NSCompoundPredicate.LogicalType = .and, caseSensitive: Bool = true) -> XCUIElementQuery {
-        let caseSwitch = caseSensitive ? "" : "[c]"
-        let subPredicates = texts.map { NSPredicate(format: "value MATCHES\(caseSwitch)%@", $0) }
+        let caseMode = caseSensitive ? "" : "[c]"
+        let subPredicates = texts.map { NSPredicate(format: "value MATCHES\(caseMode)%@", $0) }
         let predicate = NSCompoundPredicate(type: type, subpredicates: subPredicates)
         return matching(predicate)
     }
@@ -92,8 +92,8 @@ extension XCUIElementQuery {
     /// BaseScreen.app.staticTexts.placeholderValue(containing: "1", "2", "3", caseSensitive: false)
     ///  ````
     func placeholderValue(containing texts: String..., type: NSCompoundPredicate.LogicalType = .and, caseSensitive: Bool = true) -> XCUIElementQuery {
-        let caseSwitch = caseSensitive ? "" : "[c]"
-        let subPredicates = texts.map { NSPredicate(format: "placeholderValue CONTAINS\(caseSwitch)%@", $0) }
+        let caseMode = caseSensitive ? "" : "[c]"
+        let subPredicates = texts.map { NSPredicate(format: "placeholderValue CONTAINS\(caseMode)%@", $0) }
         let predicate = NSCompoundPredicate(type: type, subpredicates: subPredicates)
         return matching(predicate)
     }
@@ -110,8 +110,8 @@ extension XCUIElementQuery {
     /// BaseScreen.app.staticTexts.placeholderValue(matching: "1", "2", "3", caseSensitive: false)
     ///  ````
     func placeholderValue(matching texts: String..., type: NSCompoundPredicate.LogicalType = .and, caseSensitive: Bool = true) -> XCUIElementQuery {
-        let caseSwitch = caseSensitive ? "" : "[c]"
-        let subPredicates = texts.map { NSPredicate(format: "placeholderValue MATCHES\(caseSwitch)%@", $0) }
+        let caseMode = caseSensitive ? "" : "[c]"
+        let subPredicates = texts.map { NSPredicate(format: "placeholderValue MATCHES\(caseMode)%@", $0) }
         let predicate = NSCompoundPredicate(type: type, subpredicates: subPredicates)
         return matching(predicate)
     }
@@ -131,8 +131,8 @@ extension XCUIElementQuery {
         type: NSCompoundPredicate.LogicalType = .and,
         caseSensitive: Bool = true
     ) -> XCUIElementQuery {
-        let caseSwitch = caseSensitive ? "" : "[c]"
-        let subPredicates = texts.map { NSPredicate(format: "identifier CONTAINS\(caseSwitch)%@", $0) }
+        let caseMode = caseSensitive ? "" : "[c]"
+        let subPredicates = texts.map { NSPredicate(format: "identifier CONTAINS\(caseMode)%@", $0) }
         let predicate = NSCompoundPredicate(type: type, subpredicates: subPredicates)
         return matching(predicate)
     }
