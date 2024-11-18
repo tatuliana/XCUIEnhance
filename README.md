@@ -33,9 +33,10 @@ let package = Package(
 ```
 Or, in Xcode:
 
-1. Go to **File > Add Packages**.
-2. Enter the repository URL: `https://github.com/tatuliana/XCUIEnhance.git`.
-3. Add the package to your project.
+1. Go to **File > Add Package Dependencies**.
+2. Enter the repository URL: `https://github.com/tatuliana/XCUIEnhance.git` into the search field.
+3. Select the 'xcuienhance' package
+4. Add the package to your project.
 
 ## Usage
 ### 1. Waiting for an Element's State
