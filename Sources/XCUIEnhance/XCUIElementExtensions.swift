@@ -15,7 +15,7 @@ public extension XCUIElement {
         case enabled = "isEnabled"
         case selected = "isSelected"
 #if !os(macOS)
-        case focused
+        case focused = "hasFocus"
 #else
 #endif
     }
