@@ -7,7 +7,7 @@
 
 import XCTest
 
-extension XCUIElementQuery {    
+public extension XCUIElementQuery {    
     /// Extension to get an XCUIElementQuery from XCUIElementQuery where the label contains the text passed as an argument
     /// - parameter texts: String. The text that the label contains
     /// - parameter type: NSCompoundPredicate. LogicalType. An enum to choose the logical type out of AND, OR, NOT. Set to *AND* by default

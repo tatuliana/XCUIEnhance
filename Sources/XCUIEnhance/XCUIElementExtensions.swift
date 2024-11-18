@@ -8,7 +8,7 @@
 import Foundation
 import XCTest
 
-extension XCUIElement {
+public extension XCUIElement {
     enum ElementState: String {
         case exists = "exists"
         case hittable = "isHittable"
