@@ -45,7 +45,7 @@ Or, in Xcode:
         - If not, click the `+` button, search for your library, and add it.
     - In the Build Phases tab:
         - Confirm that the `XCUIEnhance` library is listed under **Link Binary with Libraries** for the UI testing target.
-
+6. Add the `import XCUIEnhance` statement to the file where you want to use the library. For better maintainability, consider adding it to a common superclass or base class if applicable.
 
 ## Usage
 ### 1. Waiting for an Element's State
