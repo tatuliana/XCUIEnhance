@@ -28,7 +28,7 @@ public extension XCUIElement {
     /// - returns: `Bool`. A boolean value indicating whether the condition was met within the specified timeout.
     /// - warning: If the condition is met at the time the function is called, it does not wait and immediately returns. In this case, the behavior is equivalent to directly checking properties like `exists`, `isHittable`, `isEnabled`, or `isSelected`. However, in rare cases, if the element appears slightly later after the assertion has already occurred, it may result in a false positive.
     /// To mitigate this, set the `isSlowed` parameter to `true` to introduce a deliberate delay, ensuring proper validation.
-    func wait(state: ElementState = .exists, result: Bool = true, timeout: TimeInterval = 5.0, isSlowed: Bool = false) -> Bool {
+    func wait(for state: ElementState = .exists, expected result: Bool = true, timeout: TimeInterval = 5.0, isSlowed: Bool = false) -> Bool {
 #if !os(macOS)
         if !isSlowed{
             switch state {
