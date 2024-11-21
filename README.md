@@ -33,9 +33,19 @@ let package = Package(
 ```
 Or, in Xcode:
 
-1. Go to **File > Add Packages**.
-2. Enter the repository URL: `https://github.com/tatuliana/XCUIEnhance.git`.
-3. Add the package to your project.
+1. Go to **File > Add Package Dependencies**.
+2. Enter the repository URL: `https://github.com/tatuliana/XCUIEnhance.git` into the search field.
+3. Select the `xcuienhance` package.
+4. Add the package to your project.
+5. Ensure the dependency is correctly linked to the appropriate target:
+    - Navigate to **Project Settings → Targets → Your UI Testing Target**.
+    - Go to the General tab:
+        - Scroll to **Frameworks and Libraries**.
+        - Check if the `XCUIEnhance` library is listed here.
+        - If not, click the `+` button, search for your library, and add it.
+    - In the Build Phases tab:
+        - Confirm that the `XCUIEnhance` library is listed under **Link Binary with Libraries** for the UI testing target.
+6. Add the `import XCUIEnhance` statement to the file where you want to use the library. For better maintainability, consider adding it to a common superclass or base class if applicable.
 
 ## Usage
 ### 1. Waiting for an Element's State
