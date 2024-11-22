@@ -88,7 +88,7 @@ let elements = XCUIApplication().buttons.identifier(containing: "Submit")
 ## Documentation
 
 ### Extensions for `XCUIElement`
-1. `wait(state:result:timeout:isSlowed:)`
+1. `wait(for:result:timeout:isSlowed:)`
 - Waits for an element to achieve a specific state (exists, hittable, enabled, selected, etc.).
 - Supports customizable timeouts and a slowing option for edge cases.
 2. `forceTapWithOffset(dx:dy:)`
